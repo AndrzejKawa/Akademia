@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Wyszukiwarka</title>
+    <link rel="stylesheet" href="main.css"/>
+    <div>Wpisz wyszukiwana fraze: </div>
+</head>
+<body>
+<section id="main">
+    <header>
+        <form action="">
+            <input type="text" name="frazaWyszukania" id = fraza value="Wyszukaj frazy w bazie"/>
+        </form>
+        <button onclick="buttonClicked()">Szukaj</button>
+        <script src="node_modules/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io.connect();
+
+            function buttonClicked() {
+                socket.emit('clicked', input.id.frazaWyszukania);
+            }
+
+        </script>
+    </header>
+</section>
+
+</body>
+</html>

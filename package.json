@@ -1,0 +1,23 @@
+{
+  "name": "untitled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Serwer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^14.0.0",
+    "express": "^4.16.2",
+    "get-json": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "mathjs": "^3.17.0",
+    "object-to-json": "0.0.5",
+    "q": "^1.5.1",
+    "socket.io": "^2.0.4"
+  }
+}
